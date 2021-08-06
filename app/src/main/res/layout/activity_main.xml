@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/employlogo" />
+        <TextView
+            android:textColor="#F779A2"
+            android:textSize="25dp"
+            android:text=""
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/signinId"
+            android:textSize="20sp"
+            android:text="Join Now"
+            android:onClick="RegistrationClick"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/input_design_text"
+            android:textAllCaps="false"
+            android:textColor="#131212"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/regrastrationId"
+            android:textSize="20sp"
+            android:text="Already have an Account?/Login"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/joinnow"
+            android:textAllCaps="false"
+            android:onClick="LoginClick"
+            android:textColor="#FAF9F9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

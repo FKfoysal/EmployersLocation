@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminPanelHomeActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbaar_admin_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_admin_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Admin Home"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/employer_list_id"
+        android:text="Employers List"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:onClick="EmployersListClicked"
+        android:layout_marginTop="200dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/joinnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/fingerprint_list_id"
+        android:text="Fingerprint Maintain"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:onClick="FingerprintMaintainClicked"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/joinnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

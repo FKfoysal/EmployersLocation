@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20sp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    app:cardElevation="15dp"
+    tools:context=".AdminEmployerMaintainActivity">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_menu_camera"
+            android:id="@+id/admin_edit_employ_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+        <TextView
+            android:layout_below="@+id/admin_edit_employ_image_id"
+            android:id="@+id/admin_edit_employ_name_id"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:background="@drawable/input_design_text"
+            android:hint="Employee Name"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_below="@+id/admin_edit_employ_name_id"
+            android:id="@+id/admin_edit_employ_phone_id"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:hint="Employee Phone"
+            android:background="@drawable/input_design_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_below="@+id/admin_edit_employ_phone_id"
+            android:id="@+id/admin_edit_employ_address_id"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:background="@drawable/input_design_text"
+            android:hint="Employee Address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/Location_track_employ_id"
+            android:layout_below="@+id/admin_edit_employ_address_id"
+            android:text="Location Track"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/joinnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/delete_this_employ_id"
+            android:layout_below="@+id/Location_track_employ_id"
+            android:text="Delete this Employee"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/joinnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

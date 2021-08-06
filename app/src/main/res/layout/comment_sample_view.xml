@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="20sp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    app:cardElevation="15dp"
+    android:background="#D1ADA9">
+
+    <RelativeLayout
+        android:background="@drawable/joinnow"
+        android:backgroundTint="#BECCA7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/sample_comment_address_id"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="#1A2241"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/sample_comment_id"
+            android:layout_below="@+id/sample_comment_address_id"
+            android:textSize="23sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#0C0C0C"
+            android:text="Comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/sample_comment_id"
+            android:id="@+id/sample_comment_time_id"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Comment Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

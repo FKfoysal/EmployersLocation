@@ -1,0 +1,30 @@
+package gub.foysal.employerslocation.Method;
+
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import gub.foysal.employerslocation.R;
+
+public class FingerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public TextView textAdminName,textAdminPhone,textAdminDate;
+    private itemClickLiseaner listener;
+
+    public FingerViewHolder(@NonNull View itemView) {
+        super(itemView);
+        textAdminName=itemView.findViewById(R.id.sample_finger_list_name_id);
+        textAdminPhone=itemView.findViewById(R.id.sample_finger_list_phone_id);
+        textAdminDate=itemView.findViewById(R.id.sample_finger_list_date_id);
+    }
+    public void setListener(itemClickLiseaner listener) {
+        this.listener = listener;
+    }
+
+    @Override
+    public void onClick(View view) {
+        listener.onClick(view, getAdapterPosition(),false);
+    }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbaar_settings_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/close_settings_id"
+                    android:text="Close"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/update_settings_id"
+                    android:text="Update"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_setting_id"
+        android:layout_below="@+id/appbaar_settings_id"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"
+        android:layout_marginTop="20sp"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+    <TextView
+        android:id="@+id/change_profile_btn_id"
+        android:text="Change Profile"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image_setting_id"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/change_name_id"
+        android:hint="Full Name..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:inputType="text"
+        android:layout_below="@+id/change_profile_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/change_phone_id"
+        android:hint="Phone Number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_below="@+id/change_name_id"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/change_address_id"
+        android:hint="Address..."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_below="@+id/change_phone_id"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/change_address_id"
+        android:text="Set Security Question?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/joinnow"
+        android:id="@+id/security_question_id"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
